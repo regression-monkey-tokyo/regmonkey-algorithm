@@ -1,9 +1,9 @@
 """Compile every figures/**/*.tikz file to a neighboring SVG using tikzc."""
 
-from pathlib import Path
 import shutil
 import subprocess
 import sys
+from pathlib import Path
 
 
 def compile_figures(root: Path) -> int:

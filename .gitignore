@@ -11,3 +11,5 @@ __pycache__/
 
 # SVG files under figures/ are generated from the tracked TikZ sources.
 /figures/**/*.svg
+
+.python-version
