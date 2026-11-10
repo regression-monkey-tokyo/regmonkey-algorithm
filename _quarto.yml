@@ -16,6 +16,7 @@ book:
   repo-url: https://github.com/regression-monkey-tokyo/regmonkey-algorithm
   site-url: https://regression-monkey-tokyo.github.io/regmonkey-algorithm/
   repo-actions: [edit, issue]
+  google-analytics: "G-L599ZSX104"
   search: true
   sidebar:
     style: docked
