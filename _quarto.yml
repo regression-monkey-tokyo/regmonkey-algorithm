@@ -1,0 +1,94 @@
+project:
+  type: book
+  output-dir: _book
+  pre-render:
+    - python scripts/compile_figures.py
+  preview:
+    port: 4213
+    browser: false
+
+lang: ja
+
+book:
+  title: "Regression Monkey Algorithm"
+  subtitle: "アルゴリズムとデータ構造の学習ノート"
+  author: "tokyo regression monkeys"
+  repo-url: https://github.com/regression-monkey-tokyo/regmonkey-algorithm
+  site-url: https://regression-monkey-tokyo.github.io/regmonkey-algorithm/
+  repo-actions: [edit, issue]
+  search: true
+  sidebar:
+    style: docked
+    collapse-level: 2
+    tools:
+      - text: Blog Series
+        icon: book
+        menu:
+          - text: Ryo's Datascience Blog
+            href: https://ryonakagami.github.io/regmonkey-datascience-blog/
+          - text: Regression Monkey Nonparametric Statistics
+            href: https://ryonakagami.github.io/regression-monkey-nonparametric/
+  page-footer:
+    center:
+      - text: "© 2026 tokyo regression monkeys"
+      - text: License
+        href: LICENSE
+  chapters:
+    - index.qmd
+    - summary.qmd
+    - notation.qmd
+    - part: "Part 1: アルゴリズムの基礎"
+      chapters:
+        - notes/foundations/introduction.qmd
+        - notes/foundations/complexity.qmd
+    - part: "Part 2: 探索"
+      chapters:
+        - notes/search/binary-search.qmd
+    - glossary.qmd
+    - references.qmd
+
+resources:
+  - LICENSE
+  - figures/**/*.svg
+
+execute:
+  freeze: false
+  error: false
+
+bibliography: references.bib
+
+format:
+  html:
+    theme:
+      light: [cosmo, include/scss/style.scss, include/scss/light.scss]
+      dark: [darkly, include/scss/style.scss, include/scss/dark.scss]
+    mainfont: '"Noto Sans JP", "Hiragino Sans", "Yu Gothic", sans-serif'
+    monofont: '"Noto Sans Mono", monospace'
+    fontsize: 16px
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    number-depth: 2
+    code-copy: true
+    code-fold: true
+    code-summary: "コードを表示"
+    code-overflow: wrap
+    highlight-style: github
+    date-format: iso
+    html-math-method:
+      method: mathjax
+      url: https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml-full.js
+    include-in-header:
+      - include/math/mathjax.html
+    grid:
+      sidebar-width: 400px
+      body-width: 1000px
+      margin-width: 220px
+  epub:
+    toc: true
+    number-sections: true
+
+language:
+  crossref-def-title: Definition
+  crossref-exm-title: Example
+  crossref-exr-title: Problem
