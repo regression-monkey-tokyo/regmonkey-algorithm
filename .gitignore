@@ -1,0 +1,13 @@
+/.quarto/
+/_book/
+/_freeze/
+**/*_files/
+*.quarto_ipynb
+.venv/
+__pycache__/
+.DS_Store
+
+**/*.quarto_ipynb
+
+# SVG files under figures/ are generated from the tracked TikZ sources.
+/figures/**/*.svg

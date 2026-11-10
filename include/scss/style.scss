@@ -1,0 +1,59 @@
+/*-- scss:rules --*/
+body {
+  line-height: 1.8;
+}
+
+h3 {
+  font-size: 1.45rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+}
+
+.quarto-figure figcaption,
+.center-content {
+  text-align: center;
+}
+
+.mini-section {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.mini-section::before {
+  content: "▶";
+  margin-right: 0.4em;
+}
+
+.regmonkey-bold {
+  color: var(--regmonkey-accent);
+  font-weight: bold;
+}
+
+.tips-block {
+  border-left: 0.3em solid var(--regmonkey-accent);
+  color: var(--regmonkey-accent);
+  padding: 0.25em 0.75em;
+  margin-block: 1rem;
+  font-weight: bold;
+}
+
+.tips-block p {
+  margin: 0;
+}
+
+.blog-custom-border {
+  padding: 1rem;
+  border: 1px solid var(--regmonkey-accent);
+  margin-block: 1rem;
+}
+
+.callout.callout-style-default .callout-body {
+  font-size: 1rem;
+}
+
+.math-scroll,
+mjx-container[display="true"] {
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100%;
+}

@@ -1,0 +1,16 @@
+# 本書の構成 {.unnumbered}
+
+## Part 1: アルゴリズムの基礎
+
+- [アルゴリズムとは](notes/foundations/introduction.qmd)：入力，出力，事前条件を明確にします．
+- [計算量](notes/foundations/complexity.qmd)：入力サイズと処理回数の関係を整理します．
+
+## Part 2: 探索
+
+- [二分探索](notes/search/binary-search.qmd)：整列済み配列の探索を，半開区間とループ不変条件から説明します．
+
+## 補助資料
+
+- [記法](notation.qmd)：添字，区間，計算量の表記を確認できます．
+- [用語集](glossary.qmd)：本文で使う基本用語をまとめています．
+- [参考文献](references.qmd)：学習を深めるための文献を掲載しています．
