@@ -1,15 +1,64 @@
+# ------------------------------------------------
+# Author: Ryo Nakagami
+# Revised: 2026-11-11
+# File: .gitignore for a Quarto book built with uv-managed Python
+# ------------------------------------------------
+
+# ---- OS / editor ----
+.DS_Store
+*.swp
+*~
+
+# ---- Temporary / sandbox ----
+/sandbox/
+/tmp/
+*.tmp
+*.bak
+*.old
+
+# ---- Secrets ----
+.env
+/config/
+*.gpg
+
+# ---- Python environment ----
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+
+# ---- Python bytecode / tool caches ----
+__pycache__/
+*.py[cod]
+*$py.class
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ---- Logs ----
+logs/
+*.log
+
+# ---- Jupyter ----
+.ipynb_checkpoints/
+
+# ---- Quarto build output ----
 /.quarto/
 /_book/
+/_site/
 /_freeze/
 **/*_files/
 *.quarto_ipynb
-.venv/
-__pycache__/
-.DS_Store
 
-**/*.quarto_ipynb
-
-# SVG files under figures/ are generated from the tracked TikZ sources.
+# ---- Generated figures (built from tracked .tikz sources) ----
 /figures/**/*.svg
 
-.python-version
+# ---- BFG Repo-Cleaner artifacts ----
+.bfg/
+.bfg-report
+bfg_check_list/
+
+**/*.quarto_ipynb
